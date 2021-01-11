@@ -1,3 +1,5 @@
+from View.Input_nilai import PrettyTable
+
 print("=======================================")
 print("===\t Nama \t : Miftahu Rizkiyah \t===")
 print("===\t NIM \t : 312010014 \t\t\t===")
@@ -6,8 +8,6 @@ print("=======================================")
 print()
 print("========\t | Ujian Akhir Semester Ganjil |\t ======")
 print()
-
-[01.15, 12/1/2021] Febro Slb: # Fungsi : tambah_data, ubah_data, hapus_data, cari_data
 
 x = PrettyTable()
 tampunglist = {}
@@ -88,9 +88,6 @@ def ubah_data(xsiapa):
             print("!!! === ERROR! Anda Memasukkan Pilihan yang Salah === !!!")
     else:
         print("!!! === ERROR! DATA TIDAK TERSEDIA === !!!")
-[01.15, 12/1/2021] Febro Slb: daftar_nilai.py
-[01.15, 12/1/2021] Febro Slb: from model.daftar_nilai import tampunglist
-from prettytable import PrettyTable
 
 
 # Fungsi : input_data

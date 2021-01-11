@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd6d812-3efa-45f0-b40b-5973b2b3fd56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/daftar_nilai.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/daftar_nilai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Input_nilai.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Input_nilai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/View_nilai.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/View_nilai.py" afterDir="false" />
     </list>
@@ -56,7 +54,7 @@
       <recent name="C:\Pelita Bangsa_Ita\Bahasa Pemrograman\UAS_Pertemuan16\Ujian_Akhir_Semester_Ganjil\Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.View_nilai">
     <configuration name="Input_nilai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Ujian_Akhir_Semester_Ganjil" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,6 +97,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="View_nilai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Ujian_Akhir_Semester_Ganjil" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/View" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/View/View_nilai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="daftar_nilai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Ujian_Akhir_Semester_Ganjil" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,9 +141,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.View_nilai" />
+        <item itemvalue="Python.daftar_nilai" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Input_nilai" />
-        <item itemvalue="Python.daftar_nilai" />
       </list>
     </recent_temporary>
   </component>
@@ -152,21 +172,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1610400980706">
+    <state width="1345" height="113" key="GridCell.Tab.0.bottom" timestamp="1610402320086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1610400980706" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1610400980706">
+    <state width="1345" height="113" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1610402320086" />
+    <state width="1345" height="113" key="GridCell.Tab.0.center" timestamp="1610402320086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1610400980706" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1610400980706">
+    <state width="1345" height="113" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1610402320086" />
+    <state width="1345" height="113" key="GridCell.Tab.0.left" timestamp="1610402320086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1610400980706" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1610400980706">
+    <state width="1345" height="113" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1610402320086" />
+    <state width="1345" height="113" key="GridCell.Tab.0.right" timestamp="1610402320086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1610400980706" />
+    <state width="1345" height="113" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1610402320086" />
   </component>
 </project>

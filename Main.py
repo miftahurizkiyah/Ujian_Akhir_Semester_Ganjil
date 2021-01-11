@@ -1,5 +1,15 @@
-from model.daftar_nilai import tambah_data, hapus_data, cari_data
-from view.input_nilai import input_data
+#from model.daftar_nilai import tambah_data, hapus_data, cari_data
+#from view.input_nilai import input_data
+
+print("=======================================")
+print("===\t Nama \t : Miftahu Rizkiyah \t===")
+print("===\t NIM \t : 312010014 \t\t\t===")
+print("===\t Kelas \t : T1.20.B1 \t\t\t===")
+print("=======================================")
+print()
+print("========\t | Ujian Akhir Semester Ganjil |\t ======")
+print()
+
 
 print("===== APLIKASI PENGOLAHAN DATA NILAI MAHASISWA =====")
 while True:
