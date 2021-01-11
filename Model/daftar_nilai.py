@@ -4,101 +4,117 @@ print("===\t NIM \t : 312010014 \t\t\t===")
 print("===\t Kelas \t : T1.20.B1 \t\t\t===")
 print("=======================================")
 print()
-print("======\t | Ujian Akhir Semester Ganjil |\t ======")
+print("========\t | Ujian Akhir Semester Ganjil |\t ======")
 print()
 
+[01.15, 12/1/2021] Febro Slb: # Fungsi : tambah_data, ubah_data, hapus_data, cari_data
 
-data = {}
-
-
-def tambah():
-    print("Tambah Data")
-    nama = input("Nama\t\t: ")
-    nim = int(input("NIM\t\t\t: "))
-    tugas = int(input("NIlai Tugas\t: "))
-    uts = int(input("Nilai UTS\t: "))
-    uas = int(input("Nilai UAS\t: "))
-    nilaiakhir = (tugas * 0.3 + uts * 0.35 + uas * 0.35)
-    data[nama] = nim, tugas, uts, uas, nilaiakhir
+x = PrettyTable()
+tampunglist = {}
 
 
-def tampilkan():
-    if data.items():
-        print("================================== Daftar Nilai ======================================")
-        print("======================================================================================")
-        print("| No  |      NAMA       |     NIM     |   TUGAS   |   UTS   |   UAS   |   NILAI AKHIR  |")
-        print("======================================================================================")
-        i = 0
-        for a in data.items():
-            i += 1
-            print(f"|{i:4} |{a[0]:13s}|{a[1][0]:17}|{a[1][1]:10d}|{a[1][2]:6d}| {a[1][2]:7d} | {a[1][4]:6.2f} | ")
+def tambah_data():
+    print("========== TAMBAH DATA NILAI MAHASISWA ==========")
+    tnama = input("Masukkan Nama Mahasiswa : ")
+    tnim = input("Masukkan NIM Mahasiswa : ")
+    tampunglist[tnama] = tnim
+
+
+def hapus_data():
+    print("========== HAPUS DATA NILAI MAHASISWA ==========")
+
+
+def cari_data():
+    print("========== CARI DATA NILAI MAHASISWA ==========")
+
+
+def ubah_data(xsiapa):
+    if xsiapa in tampunglist.keys():
+        print("Data apa yang akan diubah ? : ")
+        mhs = int(input(" 1. NIM \n 2. Nilai Tugas \n 3. Nilai UTS \n 4. Nilai UAS\n Pilih dengan angka (1/2/3/4) : "))
+        if mhs == 1:
+            ubahnim = input("Silahkan masukan NIM yang benar : ")
+            i = 0
+            vtug = tampunglist[xsiapa][1]
+            vuts = tampunglist[xsiapa][2]
+            vuas = tampunglist[xsiapa][3]
+            vakh = tampunglist[xsiapa][4]
+            tampunglist[xsiapa] = ubahnim, vtug, vuts, vuas, vakh
+            x.field_names = ["No", "NAMA", " NIM", "TUGAS", "UTS", "UAS", "AKHIR"]
+            for tdata in tampunglist.items():
+                i += 2
+                x.add_row([i, tdata[0], tdata[1][0], tdata[1][1], tdata[1][2], tdata[1][3], tdata[1][4]])
+            print(x)
+        elif mhs == 2:
+            ubahtugas = int(input("Masukkan Nilai Tugas yang benar : "))
+            i = 0
+            vnim = tampunglist[xsiapa][0]
+            vuts = tampunglist[xsiapa][2]
+            vuas = tampunglist[xsiapa][3]
+            vakh = tampunglist[xsiapa][4]
+            tampunglist[xsiapa] = vnim, ubahtugas, vuts, vuas, vakh
+            x.field_names = ["No", "NAMA", " NIM", "TUGAS", "UTS", "UAS", "AKHIR"]
+            for tdata in tampunglist.items():
+                i += 2
+                x.add_row([i, tdata[0], tdata[1][0], tdata[1][1], tdata[1][2], tdata[1][3], tdata[1][4]])
+            print(x)
+        elif mhs == 3:
+            ubahuts = int(input("Masukkan Nilai UTS yang benar : "))
+            i = 0
+            vnim = tampunglist[xsiapa][0]
+            vtug = tampunglist[xsiapa][1]
+            vuas = tampunglist[xsiapa][3]
+            vakh = tampunglist[xsiapa][4]
+            tampunglist[xsiapa] = vnim, vtug, ubahuts, vuas, vakh
+            x.field_names = ["No", "NAMA", " NIM", "TUGAS", "UTS", "UAS", "AKHIR"]
+            for tdata in tampunglist.items():
+                i += 2
+                x.add_row([i, tdata[0], tdata[1][0], tdata[1][1], tdata[1][2], tdata[1][3], tdata[1][4]])
+            print(x)
+        elif mhs == 4:
+            ubahuas = int(input("Masukkan Nilai UAS yang benar : "))
+            i = 0
+            vnim = tampunglist[xsiapa][0]
+            vtug = tampunglist[xsiapa][1]
+            vuts = tampunglist[xsiapa][2]
+            vakh = tampunglist[xsiapa][4]
+            tampunglist[xsiapa] = vnim, vtug, vuts, ubahuas, vakh
+            x.field_names = ["No", "NAMA", " NIM", "TUGAS", "UTS", "UAS", "AKHIR"]
+            for tdata in tampunglist.items():
+                i += 2
+                x.add_row([i, tdata[0], tdata[1][0], tdata[1][1], tdata[1][2], tdata[1][3], tdata[1][4]])
+            print(x)
+        else:
+            print("!!! === ERROR! Anda Memasukkan Pilihan yang Salah === !!!")
     else:
-        print("===================================== Daftar Nilai ===================================")
-        print("======================================================================================")
-        print("|  No  |      NAMA     |      NIM      |   TUGAS  |   UTS   |   UAS   | NILAI AKHIR  |")
-        print("======================================================================================")
-        print("|                                    Tidak Ada Data                                  |")
-        print("======================================================================================")
+        print("!!! === ERROR! DATA TIDAK TERSEDIA === !!!")
+[01.15, 12/1/2021] Febro Slb: daftar_nilai.py
+[01.15, 12/1/2021] Febro Slb: from model.daftar_nilai import tampunglist
+from prettytable import PrettyTable
 
 
-def hapus():
-    print("Hapus Data Nilai Mahasiswa")
-    nama = input(" Masukan Nama\t:")
-    if nama in data.keys():
-        del data[nama]
-        print()
-        print("================================")
-        print("====BERHASIL MENGHAPUS DATA====")
-        print("================================")
-    else:
-        print("Data {0} tidak ada".format(nama))
+# Fungsi : input_data
+
+x = PrettyTable()
+# tampunglist = {}
 
 
-def ubah():
-    print("===============================")
-    print("===Edit Data Nilai Mahasiswa===")
-    print("===============================")
-    nama = input("Masukan Nama\t\t: ")
-    print("===============================")
-    if nama in data.keys():
-        nim = input("NIM baru\t\t\t: ")
-        tugas = int(input("Nilai Tugas Baru\t: "))
-        uts = int(input("Nilai UTS Baru\t\t: "))
-        uas = int(input("Nilai UAS Baru\t\t: "))
-        nilaiakhir = (tugas * 30 / 100 + uts * 35 / 100 + uas * 35 / 100)
-        data[nama] = nim, tugas, uts, uas, nilaiakhir
-        print()
-        print("================================")
-        print("=====BERHASIL MENGUBAH DATA=====")
-        print("================================")
-    else:
-        print("Data nilai {0} tidak ada ".format(nama))
-
-
-while True:
-    print("")
-    print("================================")
-    print("======== DATA MAHASISWA ========")
-    print("================================")
-    x = input("(L)ihat \n(T)ambah \n(U)bah \n(H)apus \n(K)eluar \nPilih menu : ")
-    if x.lower() == "l":
-        tampilkan()
-    elif x.lower() == "t":
-        tambah()
-    elif x.lower() == "u":
-        ubah()
-    elif x.lower() == "h":
-        hapus()
-    elif x.lower() == "k":
-        print()
-        print("=================================")
-        print("====== KELUAR DARI PROGRAM ======")
-        print("=================================")
-        break
-
-    else:
-        print()
-        print("==================================")
-        print("== Pilihan Anda Tidak Tersedia ==")
-        print("== Pilihlah Menu Yang Tersedia ==")
-        print("==================================")
+def input_data(tnama='', tnim=''):
+    print("aaa")
+    print(tampunglist.items())
+    print(tampunglist.values())
+    # print(tampunglist[tnama])
+    print("FORM INPUT DATA NILAI")
+    ttugas = int(input("Masukkan Nilai Tugas Mahasiswa : "))
+    tuts = int(input("Masukkan Nilai UTS Mahasiswa : "))
+    tuas = int(input("Masukkan Nilai UAS Mahasiswa : "))
+    takhir = 0.3 * float(ttugas) + 0.35 * float(tuts) + 0.35 * float(tuas)
+    print(takhir)
+    tampunglist[tnama] = tnim, ttugas, tuts, tuas, takhir
+    print(tampunglist[tnama])
+    no = 0
+    x.field_names = ["NO", "NAMA", " NIM", "TUGAS", "UTS", "UAS", "AKHIR"]
+    for tdata in tampunglist.items():
+        no += 1
+        x.add_row([no, tdata[0], tdata[1][0], tdata[1][1], tdata[1][2], tdata[1][3], tdata[1][4]])
+    print(x)
